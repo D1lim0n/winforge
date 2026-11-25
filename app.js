@@ -50,8 +50,8 @@ const APPS = [
     about: "Инструмент для AI-агентов: берёт проект на TypeScript, Python, C, Go, Ruby или Java и переписывает его на Rust модуль за модулем. После каждого шага прогоняет записанные кейсы оригинала и останавливается, если поведение разошлось.",
     tags: ["rust", "миграция", "open source"],
     url: `${GH}/erkamyaman/rust-anything`,
-    win: { url: rel("erkamyaman/rust-anything", "v3.4.0", "rust-anything-v3.4.0-x86_64-pc-windows-msvc.zip"), file: "rust-anything-v3.4.0-x86_64-pc-windows-msvc.zip" },
-    mac: { url: rel("erkamyaman/rust-anything", "v3.4.0", "rust-anything-v3.4.0-aarch64-apple-darwin.tar.gz"), file: "rust-anything-v3.4.0-aarch64-apple-darwin.tar.gz" },
+    win: { url: rel("erkamyaman/rust-anything", "v4.1.0", "rust-anything-v4.1.0-x86_64-pc-windows-msvc.zip"), file: "rust-anything-v4.1.0-x86_64-pc-windows-msvc.zip" },
+    mac: { url: rel("erkamyaman/rust-anything", "v4.1.0", "rust-anything-v4.1.0-aarch64-apple-darwin.tar.gz"), file: "rust-anything-v4.1.0-aarch64-apple-darwin.tar.gz" },
     shots: ["shots/rustanything/win-1.png"]
   },
   {
@@ -60,8 +60,8 @@ const APPS = [
     about: "Открытый агент: читает проект, правит файлы, гоняет команды. Работает из консоли, в отдельном приложении и как расширение к редактору, провайдера моделей выбираешь сам.",
     tags: ["ai", "cli", "open source"],
     url: "https://opencode.ai/",
-    win: { url: rel("anomalyco/opencode", "v1.19.6", "opencode-desktop-win-x64.exe"), file: "opencode-desktop-win-x64.exe" },
-    mac: { url: rel("anomalyco/opencode", "v1.19.6", "opencode-desktop-mac-arm64.dmg"), file: "opencode-desktop-mac-arm64.dmg" },
+    win: { url: rel("anomalyco/opencode", "v2.4.1", "opencode-desktop-win-x64.exe"), file: "opencode-desktop-win-x64.exe" },
+    mac: { url: rel("anomalyco/opencode", "v2.4.1", "opencode-desktop-mac-arm64.dmg"), file: "opencode-desktop-mac-arm64.dmg" },
     shots: ["shots/opencode/win-1.png"]
   },
   {
@@ -190,8 +190,8 @@ const APPS = [
     about: "Нативный клиент Telegram на Rust без браузерного движка: стартует мгновенно, держит 10–30 МБ памяти и не грузит процессор в простое.",
     tags: ["telegram", "rust", "лёгкий"],
     url: `${GH}/Timon2306/oxigram`,
-    win: { url: rel("Timon2306/oxigram", "v0.2.0", "oxigram-windows-x64-oxigram-native_0.2.0_x64-setup.exe"), file: "oxigram-windows-x64-oxigram-native_0.2.0_x64-setup.exe" },
-    mac: { url: rel("Timon2306/oxigram", "v0.2.0", "oxigram-macos-apple-silicon-Oxigram_0.2.0_aarch64.dmg"), file: "oxigram-macos-apple-silicon-Oxigram_0.2.0_aarch64.dmg" },
+    win: { url: rel("Timon2306/oxigram", "v0.3.2", "oxigram-windows-x64-oxigram-native_0.3.2_x64-setup.exe"), file: "oxigram-windows-x64-oxigram-native_0.3.2_x64-setup.exe" },
+    mac: { url: rel("Timon2306/oxigram", "v0.3.2", "oxigram-macos-apple-silicon-Oxigram_0.3.2_aarch64.dmg"), file: "oxigram-macos-apple-silicon-Oxigram_0.3.2_aarch64.dmg" },
     shots: ["shots/oxigram/win-1.webp", "shots/oxigram/win-2.webp", "shots/oxigram/win-3.webp"]
   },
   {
@@ -230,8 +230,8 @@ const APPS = [
     about: "Отправляет файлы и текст на телефон, ноутбук и телевизор в одной Wi-Fi сети. Без интернета, регистрации и серверов посередине.",
     tags: ["lan", "файлы", "open source"],
     url: "https://localsend.org/",
-    win: { url: rel("localsend/localsend", "v1.18.2", "LocalSend-1.18.2-windows-x86-64.exe"), file: "LocalSend-1.18.2-windows-x86-64.exe" },
-    mac: { url: rel("localsend/localsend", "v1.18.2", "LocalSend-1.18.2.dmg"), file: "LocalSend-1.18.2.dmg" },
+    win: { url: rel("localsend/localsend", "v1.19.0", "LocalSend-1.19.0-windows-x86-64.exe"), file: "LocalSend-1.19.0-windows-x86-64.exe" },
+    mac: { url: rel("localsend/localsend", "v1.19.0", "LocalSend-1.19.0.dmg"), file: "LocalSend-1.19.0.dmg" },
     shots: ["shots/localsend/win-1.jpg", "shots/localsend/win-2.jpg", "shots/localsend/win-3.jpg"]
   },
   {
@@ -321,7 +321,7 @@ const APPS = [
     about: "Плеер для Windows: читает локальные файлы, подтягивает треки из онлайн-источников, показывает текст песни и запоминает статистику прослушиваний.",
     tags: ["музыка", "плеер", "open source"],
     url: `${GH}/PoviceProgrammer/NeDotify`,
-    win: { url: rel("PoviceProgrammer/NeDotify", "v2.6.1", "Soneth_Setup.exe"), file: "Soneth_Setup.exe" },
+    win: { url: rel("PoviceProgrammer/NeDotify", "v2.6.5", "Soneth_v2.6.5.exe"), file: "Soneth_v2.6.5.exe" },
     mac: null, macAlt: { name: "IINA", url: "https://iina.io/" },
     shots: ["shots/nedotify/win-1.png", "shots/nedotify/win-3.png"]
   },
@@ -352,7 +352,7 @@ const APPS = [
     note: "Первый запуск скачивает и готовит Android-образ — это долго и требует ~10 ГБ на диске. Дальше приложения стартуют почти мгновенно.",
     tags: ["android", "apk", "open source"],
     url: `${GH}/RoutineMiku/apkstart`,
-    win: { url: rel("RoutineMiku/apkstart", "v0.6.2", "ApkStart-0.6.2-Setup.exe"), file: "ApkStart-0.6.2-Setup.exe" },
+    win: { url: rel("RoutineMiku/apkstart", "v0.6.4", "ApkStart-0.6.4-Setup.exe"), file: "ApkStart-0.6.4-Setup.exe" },
     mac: null, macAlt: null,
     shots: ["shots/apkstart/win-1.png", "shots/apkstart/win-2.png"]
   },
@@ -362,7 +362,7 @@ const APPS = [
     about: "Современный клинер на WinUI 3: удаляет временные файлы, кэши браузеров и логи, понимает формат winapp2.ini от сообщества. Без рекламы, допродаж и «оптимизации реестра», которой не существует.",
     tags: ["очистка", "ccleaner", "open source"],
     url: `${GH}/builtbybel/FluentCleaner`,
-    win: { url: rel("builtbybel/FluentCleaner", "26.11.108", "FluentCleaner-win-x64.zip"), file: "FluentCleaner-win-x64.zip" },
+    win: { url: rel("builtbybel/FluentCleaner", "26.11.123", "FluentCleaner-win-x64.zip"), file: "FluentCleaner-win-x64.zip" },
     mac: null, macAlt: { name: "OnyX", url: "https://titanium-software.fr/en/onyx.html" },
     shots: ["shots/fluentcleaner/win-1.png"]
   },
@@ -373,8 +373,8 @@ const APPS = [
     note: "Сборки пока в статусе alpha, версия помечена как prerelease. Версия для macOS собрана сообществом и помечена UNOFFICIAL.",
     tags: ["youtube", "rust", "open source"],
     url: `${GH}/Avaneesh-Inamdar/Stream-Tube-Desktop`,
-    win: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.2-alpha", "StreamTube-0.7.2-alpha-setup.exe"), file: "StreamTube-0.7.2-alpha-setup.exe" },
-    mac: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.2-alpha", "StreamTube-0.7.2-alpha-macos-arm64-UNOFFICIAL.zip"), file: "StreamTube-0.7.2-alpha-macos-arm64-UNOFFICIAL.zip" },
+    win: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.5-alpha", "StreamTube-0.7.5-alpha-setup.exe"), file: "StreamTube-0.7.5-alpha-setup.exe" },
+    mac: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.5-alpha", "StreamTube-0.7.5-alpha-macos-arm64-UNOFFICIAL.zip"), file: "StreamTube-0.7.5-alpha-macos-arm64-UNOFFICIAL.zip" },
     shots: ["shots/streamtube/win-1.png", "shots/streamtube/win-2.png"]
   },
   {

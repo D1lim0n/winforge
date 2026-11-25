@@ -190,8 +190,8 @@ const APPS = [
     about: "Нативный клиент Telegram на Rust без браузерного движка: стартует мгновенно, держит 10–30 МБ памяти и не грузит процессор в простое.",
     tags: ["telegram", "rust", "лёгкий"],
     url: `${GH}/Timon2306/oxigram`,
-    win: { url: rel("Timon2306/oxigram", "v0.2.0", "oxigram-windows-x64-oxigram-native_0.2.0_x64-setup.exe"), file: "oxigram_0.2.0_x64-setup.exe" },
-    mac: { url: rel("Timon2306/oxigram", "v0.2.0", "oxigram-macos-apple-silicon-Oxigram_0.2.0_aarch64.dmg"), file: "Oxigram_0.2.0_aarch64.dmg" },
+    win: { url: rel("Timon2306/oxigram", "v0.2.0", "oxigram-windows-x64-oxigram-native_0.2.0_x64-setup.exe"), file: "oxigram-windows-x64-oxigram-native_0.2.0_x64-setup.exe" },
+    mac: { url: rel("Timon2306/oxigram", "v0.2.0", "oxigram-macos-apple-silicon-Oxigram_0.2.0_aarch64.dmg"), file: "oxigram-macos-apple-silicon-Oxigram_0.2.0_aarch64.dmg" },
     shots: ["shots/oxigram/win-1.webp", "shots/oxigram/win-2.webp", "shots/oxigram/win-3.webp"]
   },
   {
@@ -365,6 +365,38 @@ const APPS = [
     win: { url: rel("builtbybel/FluentCleaner", "26.11.108", "FluentCleaner-win-x64.zip"), file: "FluentCleaner-win-x64.zip" },
     mac: null, macAlt: { name: "OnyX", url: "https://titanium-software.fr/en/onyx.html" },
     shots: ["shots/fluentcleaner/win-1.png"]
+  },
+  {
+    slug: "streamtube", name: "Stream Tube", hint: "YouTube без рекламы", icon: "icons/streamtube.png", accent: "#ff2d78", cat: "utils",
+    tag: "Нативный клиент YouTube на Rust: без рекламы и трекеров.",
+    about: "Проигрывает видео напрямую через mpv, поэтому реклама и промо-блоки не загружаются вовсе. Из коробки SponsorBlock, DeArrow и Return YouTube Dislike, есть подписки, Shorts и поиск.",
+    note: "Сборки пока в статусе alpha, версия помечена как prerelease. Версия для macOS собрана сообществом и помечена UNOFFICIAL.",
+    tags: ["youtube", "rust", "open source"],
+    url: `${GH}/Avaneesh-Inamdar/Stream-Tube-Desktop`,
+    win: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.2-alpha", "StreamTube-0.7.2-alpha-setup.exe"), file: "StreamTube-0.7.2-alpha-setup.exe" },
+    mac: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.2-alpha", "StreamTube-0.7.2-alpha-macos-arm64-UNOFFICIAL.zip"), file: "StreamTube-0.7.2-alpha-macos-arm64-UNOFFICIAL.zip" },
+    shots: ["shots/streamtube/win-1.png", "shots/streamtube/win-2.png"]
+  },
+  {
+    slug: "markmello", name: "MarkMello", hint: "Чтение Markdown", icon: "icons/markmello.png", accent: "#dcdce6", cat: "utils",
+    tag: "Открывает Markdown сразу в режиме чтения, редактор — по кнопке.",
+    about: "Двойной клик по .md — документ открывается как книга: тема, размер шрифта, межстрочный интервал и ширина колонки настраиваются. Режим правки включается вручную, чтобы случайно ничего не задеть.",
+    tags: ["markdown", "редактор", "open source"],
+    url: "https://markmello.ru",
+    win: { url: rel("dartdavros/MarkMello", "v0.7.0", "MarkMello-setup-win-x64.exe"), file: "MarkMello-setup-win-x64.exe" },
+    mac: { url: rel("dartdavros/MarkMello", "v0.7.0", "MarkMello-macos-arm64.dmg"), file: "MarkMello-macos-arm64.dmg" },
+    shots: ["shots/markmello/win-1.png"]
+  },
+  {
+    slug: "phonebox", name: "PhoneBox", hint: "Панель из телефона", icon: "icons/phonebox.png", accent: "#34d399", cat: "custom",
+    tag: "Превращает старый Android-телефон в панель управления ПК.",
+    about: "На телефон ставится приложение, на компьютер — небольшой агент: по USB или Wi-Fi телефон показывает загрузку CPU и GPU, часы, музыку и плитки с командами. 132 виджета и 30 готовых шаблонов, раскладка собирается в браузере, без облака и аккаунтов.",
+    note: "На телефон нужен APK из того же релиза (PhoneBox-0.9.29.apk), ссылка на странице релизов.",
+    tags: ["android", "панель", "open source"],
+    url: `${GH}/ersinkoc/phonebox`,
+    win: { url: rel("ersinkoc/phonebox", "v0.9.29", "PhoneBoxAgent-0.9.29-win-x64.zip"), file: "PhoneBoxAgent-0.9.29-win-x64.zip" },
+    mac: { url: rel("ersinkoc/phonebox", "v0.9.29", "PhoneBoxAgent-0.9.29-osx-arm64.zip"), file: "PhoneBoxAgent-0.9.29-osx-arm64.zip" },
+    shots: ["shots/phonebox/win-1.png", "shots/phonebox/win-2.png", "shots/phonebox/win-3.png", "shots/phonebox/win-4.png"]
   },
   {
     slug: "mimic", name: "Mimic", hint: "Discord-статус", icon: "icons/mimic.svg", accent: "#a855f7", cat: "utils",

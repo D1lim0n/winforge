@@ -1,11 +1,13 @@
 // Обновляет версии приложений в app.js по последним релизам GitHub.
 // node tools/update-versions.mjs [--dry]
-// GITHUB_TOKEN необязателен: без него лимит 60 запросов в час.
+// Кэш ETag в tools/.cache/releases.json: повторный прогон тратит 0 запросов
+// (ответ 304 в лимит GitHub не считается). GITHUB_TOKEN необязателен.
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 const FILE = fileURLToPath(new URL("../app.js", import.meta.url));
+const CACHE_FILE = fileURLToPath(new URL("./.cache/releases.json", import.meta.url));
 const DRY = process.argv.includes("--dry");
 const API = "https://api.github.com";
 const headers = { "User-Agent": "winforge-updater", Accept: "application/vnd.github+json" };
@@ -60,10 +62,38 @@ function pickAsset(assets, slot, current) {
 }
 
 const cache = new Map();
+let store = {};
+try {
+  store = JSON.parse(readFileSync(CACHE_FILE, "utf8"));
+} catch {
+  store = {};
+}
+let blocked = false;
+
 async function releases(repo) {
   if (cache.has(repo)) return cache.get(repo);
-  const list = await fetch(`${API}/repos/${repo}/releases?per_page=10`, { headers });
-  const out = list.ok ? (await list.json()).filter((r) => !r.draft) : [];
+  const cached = store[repo];
+  const h = { ...headers };
+  if (cached?.etag) h["If-None-Match"] = cached.etag;
+
+  const res = await fetch(`${API}/repos/${repo}/releases?per_page=10`, { headers: h });
+  let out = null;
+
+  if (res.status === 304 && cached) out = cached.data;
+  else if (res.ok) {
+    out = (await res.json()).filter((r) => !r.draft);
+    store[repo] = { etag: res.headers.get("etag") || "", data: out };
+  } else if ((res.status === 403 || res.status === 429) && cached) {
+    blocked = true;
+    out = cached.data; // лимит исчерпан — работаем по прошлым данным, а не пропускаем всё
+  } else if (res.status === 404) {
+    out = [];
+    delete store[repo];
+  } else {
+    blocked = true;
+    out = cached?.data || [];
+  }
+
   cache.set(repo, out);
   return out;
 }
@@ -105,6 +135,10 @@ for (const c of changes) {
   console.log(`bump  ${c.repo}  ${c.from} -> ${c.to}${file}`);
 }
 
+mkdirSync(new URL("./.cache", import.meta.url), { recursive: true });
+writeFileSync(CACHE_FILE, JSON.stringify(store, null, 1));
+
+if (blocked) console.log("внимание: часть ответов GitHub не получена (лимит или сеть), данные могли остаться старыми");
 if (!changes.length) { console.log("всё актуально"); process.exit(0); }
 if (DRY) process.exit(0);
 

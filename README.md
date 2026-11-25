@@ -1,13 +1,13 @@
 # WINFORGE
 
+**Сайт: [d1lim0n.github.io/winforge](https://d1lim0n.github.io/winforge/)** — открывается в браузере, ничего ставить не нужно.
+
 Каталог приложений, после которых Windows становится удобнее: кастомизация,
 оптимизация, мелкие утилиты, сеть, приватность, защита. Плюс раздел с играми
 и инструментами для разработки — всё в одной подборке вместо десятка вкладок
 с «топ-10 программ 2019 года».
 
-Сайт — `https://d1lim0n.github.io/winforge/`
-
-## Зачем это
+## Что это за подборка
 
 Ставить софт на Windows неудобно не потому, что его нет, а потому, что его
 слишком много и непонятно, что из этого не мусор. Здесь 46 проверенных
@@ -17,20 +17,21 @@
 Никакой рекламы, партнёрских ссылок и «скачать с нашего зеркала». Все файлы
 берутся только с официальных сайтов и GitHub-репозиториев авторов.
 
-## Что внутри
+## Приложения по категориям
 
-| Категория | Что там |
+Иконки и названия ведут на официальный сайт проекта. Полные описания,
+скриншоты и кнопки скачивания — на сайте.
+
+| Категория | Приложения |
 | --- | --- |
-| Кастомизация | Windhawk, Rainmeter, Nilesoft Shell, DeskMakeover, Deskloom, PhoneBox |
-| Оптимизация | Winhance, FluentCleaner, WizTree, Mem Reduct, Geek Uninstaller, WinToys, AeroTweaks |
-| Разработка | VS Code, OpenCode, Cursor, Git, GitHub Desktop, Node.js, Python, rust-anything |
-| Сеть | Zapret, qBittorrent, LocalSend, RustDesk, Happ, Oxigram, Serein |
-| Утилиты | PowerToys, Flameshot, Translumo, WinRAR, NeDotify, Stream Tube, MarkMello, Mimic |
-| Игры | Steam, EA app, PineconeMC |
-| Приватность | DuckDuckGo |
-| Защита | Kaspersky Free |
-
-Полный список с версиями и ссылками — на сайте, категории и поиск там же.
+| **Кастомизация** | [<img src="icons/windhawk.png" width="16" height="16" alt=""> Windhawk](https://windhawk.net/) · [<img src="icons/rainmeter.png" width="16" height="16" alt=""> Rainmeter](https://www.rainmeter.net/) · [<img src="icons/deskmakeover.png" width="16" height="16" alt=""> DeskMakeover](https://github.com/nicepkg/deskmakeover) · [<img src="icons/deskloom.png" width="16" height="16" alt=""> Deskloom](https://apps.microsoft.com/detail/9n37b36gqq8b) · [<img src="icons/nilesoft.png" width="16" height="16" alt=""> Nilesoft Shell](https://nilesoft.org/) · [<img src="icons/phonebox.png" width="16" height="16" alt=""> PhoneBox](https://github.com/ersinkoc/phonebox) |
+| **Оптимизация** | [<img src="icons/aerotweaks.svg" width="16" height="16" alt=""> AeroTweaks](https://aerotweaks.com/) · [<img src="icons/wiztree.png" width="16" height="16" alt=""> WizTree](https://diskanalyzer.com/) · [<img src="icons/wintoys.png" width="16" height="16" alt=""> WinToys](https://apps.microsoft.com/detail/9p8ltpgczxwg) · [<img src="icons/winhance.png" width="16" height="16" alt=""> Winhance](https://winhance.net/) · [<img src="icons/geek.svg" width="16" height="16" alt=""> Geek Uninstaller](https://geekuninstaller.com/) · [<img src="icons/memreduct.svg" width="16" height="16" alt=""> Mem Reduct](https://github.com/henrypp/memreduct) · [<img src="icons/fluentcleaner.png" width="16" height="16" alt=""> FluentCleaner](https://github.com/builtbybel/FluentCleaner) |
+| **Разработка** | [<img src="icons/rustanything.svg" width="16" height="16" alt=""> rust-anything](https://github.com/erkamyaman/rust-anything) · [<img src="icons/opencode.svg" width="16" height="16" alt=""> OpenCode](https://opencode.ai/) · [<img src="icons/vscode.png" width="16" height="16" alt=""> VS Code](https://code.visualstudio.com/) · [<img src="icons/node.svg" width="16" height="16" alt=""> Node.js](https://nodejs.org/) · [<img src="icons/java.svg" width="16" height="16" alt=""> Java (JDK)](https://adoptium.net/) · [<img src="icons/python.png" width="16" height="16" alt=""> Python](https://www.python.org/downloads/windows/) · [<img src="icons/voicemode.svg" width="16" height="16" alt=""> VoiceMode](https://github.com/mbailey/voicemode) · [<img src="icons/cursor.svg" width="16" height="16" alt=""> Cursor](https://cursor.com/) · [<img src="icons/git.svg" width="16" height="16" alt=""> Git](https://git-scm.com/) · [<img src="icons/githubdesktop.svg" width="16" height="16" alt=""> GitHub Desktop](https://desktop.github.com/) |
+| **Сеть** | [<img src="icons/happ.png" width="16" height="16" alt=""> Happ](https://www.happ.su/) · [<img src="icons/zapret.svg" width="16" height="16" alt=""> Zapret-Discord](https://github.com/Flowseal/zapret-discord-youtube) · [<img src="icons/oxigram.png" width="16" height="16" alt=""> Oxigram](https://github.com/Timon2306/oxigram) · [<img src="icons/serein.png" width="16" height="16" alt=""> Serein](https://github.com/ViceVerse-cz/Serein) · [<img src="icons/rustdesk.svg" width="16" height="16" alt=""> RustDesk](https://rustdesk.com/) · [<img src="icons/qbittorrent.png" width="16" height="16" alt=""> qBittorrent](https://www.qbittorrent.org/) |
+| **Утилиты** | [<img src="icons/powertoys.png" width="16" height="16" alt=""> PowerToys](https://github.com/microsoft/PowerToys) · [<img src="icons/translumo.png" width="16" height="16" alt=""> Translumo](https://github.com/Danily07/Translumo) · [<img src="icons/flameshot.png" width="16" height="16" alt=""> Flameshot](https://flameshot.org/) · [<img src="icons/deeplivecam.svg" width="16" height="16" alt=""> Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) · [<img src="icons/wirelessbattery.svg" width="16" height="16" alt=""> Wireless Battery](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) · [<img src="icons/localsend.png" width="16" height="16" alt=""> LocalSend](https://localsend.org/) · [<img src="icons/winrar.svg" width="16" height="16" alt=""> WinRAR](https://www.win-rar.com/download.html) · [<img src="icons/nedotify.png" width="16" height="16" alt=""> NeDotify](https://github.com/PoviceProgrammer/NeDotify) · [<img src="icons/apkstart.png" width="16" height="16" alt=""> ApkStart](https://github.com/RoutineMiku/apkstart) · [<img src="icons/streamtube.png" width="16" height="16" alt=""> Stream Tube](https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop) · [<img src="icons/markmello.png" width="16" height="16" alt=""> MarkMello](https://markmello.ru) · [<img src="icons/mimic.svg" width="16" height="16" alt=""> Mimic](https://github.com/Timon2306/mimic-discord) |
+| **Игры** | [<img src="icons/ea.svg" width="16" height="16" alt=""> EA app](https://www.ea.com/ea-app) · [<img src="icons/steam.svg" width="16" height="16" alt=""> Steam](https://store.steampowered.com/about/) · [<img src="icons/pineconemc.png" width="16" height="16" alt=""> PineconeMC](https://github.com/ElyPrismLauncher/Launcher) |
+| **Приватность** | [<img src="icons/duckduckgo.png" width="16" height="16" alt=""> DuckDuckGo](https://duckduckgo.com/app) |
+| **Защита** | [<img src="icons/kaspersky.svg" width="16" height="16" alt=""> Kaspersky Free](https://www.kaspersky.com/free-antivirus) |
 
 ## Как пользоваться сайтом
 
@@ -103,6 +104,8 @@ GitHub Pages как есть.
 `cat` — одна из категорий: `custom`, `optimize`, `dev`, `net`, `utils`,
 `games`, `privacy`, `security`. Счётчики, фильтры, бегущие строки и панель
 сборки строятся из этого массива автоматически, руками их править не нужно.
+Таблица с иконками выше тоже собирается из него — при добавлении приложения
+допиши строку и в README.
 
 Страница приложения — хеш `#/a/<slug>`, поэтому на Pages не нужен роутинг
 на сервере. Ленты на главной собираются из `APPS` так, чтобы приложения

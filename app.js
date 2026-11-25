@@ -235,7 +235,7 @@ const APPS = [
     shots: ["shots/localsend/win-1.jpg", "shots/localsend/win-2.jpg", "shots/localsend/win-3.jpg"]
   },
   {
-    slug: "geek", name: "Geek Uninstaller", hint: "Удаление программ", icon: "icons/geek.png", accent: "#7e9cff", cat: "optimize",
+    slug: "geek", name: "Geek Uninstaller", hint: "Удаление программ", icon: "icons/geek.svg", accent: "#7e9cff", cat: "optimize",
     tag: "Чистое удаление программ вместе с остатками в реестре и папках.",
     about: "Портативный деинсталлятор: удаляет программу, затем находит её хвосты в реестре и на диске. Не требует установки — распаковал и запустил.",
     tags: ["uninstall", "реестр", "portable"],

@@ -409,6 +409,39 @@ const APPS = [
     shots: []
   },
   {
+    slug: "oledtextfix", name: "OLEDTextFix", hint: "Чёткий текст на OLED", icon: "icons/oledtextfix.svg", accent: "#6ea8fe", cat: "utils",
+    tag: "Убирает цветные каёмки вокруг текста на OLED-мониторах.",
+    about: "Захватывает экран через DXGI Desktop Duplication и на видеокарте сдвигает цветовые каналы под реальное расположение субпикселей панели, а результат показывает в прозрачном оверлее поверх всех окон. Работает со всеми программами сразу: есть пресеты для QD-OLED и WOLED, включая разные размеры и поколения панелей.",
+    note: "Проект экспериментальный, .exe не подписан: SmartScreen покажет предупреждение — «Подробнее» → «Выполнить всё равно». Мгновенно отключается по Ctrl+Alt+F. Нужны Windows 10 2004+/11 и видеокарта с DirectX 11.",
+    tags: ["oled", "текст", "open source"],
+    url: `${GH}/oguz463/OLEDTextFix`,
+    win: { url: rel("oguz463/OLEDTextFix", "v1.2.4", "OLEDTextFix.exe"), file: "OLEDTextFix.exe" },
+    mac: null, macAlt: null,
+    shots: []
+  },
+  {
+    slug: "peakcut", name: "PeakCut", hint: "Клипы из стримов", icon: "icons/peakcut.svg", accent: "#ff8b33", cat: "utils",
+    tag: "Режет длинные видео и стримы на вертикальные клипы с субтитрами.",
+    about: "Вставляешь ссылку YouTube, Twitch или Kick либо свой файл — PeakCut расшифровывает звук, спрашивает у AI, какие моменты зацепят зрителя, и режет их в 9:16 с пословными субтитрами и хуком. Умеет писать стрим в буфер и вырезать хайлайты на ходу, а готовые клипы ставит в очередь на публикацию в YouTube, Instagram и TikTok.",
+    note: "Ставится из исходников: Python 3.10+, ffmpeg, «pip install -r requirements.txt», затем «python -m studio.server» и http://127.0.0.1:8765. Нужен свой ключ AI — без него клипы не делаются.",
+    tags: ["видео", "клипы", "open source"],
+    url: `${GH}/haziqahmedqasmi/peakcut`,
+    win: { url: "https://github.com/haziqahmedqasmi/peakcut/archive/refs/heads/main.zip", file: "peakcut-main.zip" },
+    mac: null, macAlt: null,
+    shots: []
+  },
+  {
+    slug: "xmodhub", name: "XMODhub", hint: "Трейнеры для игр", icon: "icons/xmodhub.png", accent: "#ff8b33", cat: "games",
+    tag: "Трейнеры и моды для 7000+ одиночных игр в одном приложении.",
+    about: "Находит установленные игры в Steam, Epic, Xbox, GOG и других лаунчерах и включает читы прямо в бою: бесконечное здоровье, деньги, предметы. Моды обновляются вместе с патчами игры, а настройки и раскладку можно менять с телефона.",
+    note: "Пробный период бесплатный, дальше подписка. Только одиночные игры: в сетевых аккаунт могут забанить.",
+    tags: ["трейнеры", "моды", "игры"],
+    url: "https://www.xmodhub.com/uk",
+    win: { url: "https://xmod-static.xhubplay.com/upload/20250512115546/app_version/xmodhubInstaller__20250509_100700_channel100142.exe", file: "xmodhubInstaller__20250509_100700_channel100142.exe" },
+    mac: null, macAlt: null,
+    shots: ["shots/xmodhub/win-1.webp", "shots/xmodhub/win-2.webp", "shots/xmodhub/win-3.webp"]
+  },
+  {
     slug: "pineconemc", name: "PineconeMC", hint: "Minecraft-лаунчер", icon: "icons/pineconemc.png", accent: "#7ed957", cat: "games",
     tag: "Лаунчер Minecraft с модами и аккаунтами Ely.by.",
     about: "Форк Prism Launcher: профили с разными версиями и сборками модов, поддержка Ely.by и офлайн-аккаунтов, тонкая настройка памяти и Java.",

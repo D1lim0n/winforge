@@ -50,8 +50,8 @@ const APPS = [
     about: "Инструмент для AI-агентов: берёт проект на TypeScript, Python, C, Go, Ruby или Java и переписывает его на Rust модуль за модулем. После каждого шага прогоняет записанные кейсы оригинала и останавливается, если поведение разошлось.",
     tags: ["rust", "миграция", "open source"],
     url: `${GH}/erkamyaman/rust-anything`,
-    win: { url: rel("erkamyaman/rust-anything", "v4.1.0", "rust-anything-v4.1.0-x86_64-pc-windows-msvc.zip"), file: "rust-anything-v4.1.0-x86_64-pc-windows-msvc.zip" },
-    mac: { url: rel("erkamyaman/rust-anything", "v4.1.0", "rust-anything-v4.1.0-aarch64-apple-darwin.tar.gz"), file: "rust-anything-v4.1.0-aarch64-apple-darwin.tar.gz" },
+    win: { url: rel("erkamyaman/rust-anything", "v5.0.2", "rust-anything-v5.0.2-x86_64-pc-windows-msvc.zip"), file: "rust-anything-v5.0.2-x86_64-pc-windows-msvc.zip" },
+    mac: { url: rel("erkamyaman/rust-anything", "v5.0.2", "rust-anything-v5.0.2-aarch64-apple-darwin.tar.gz"), file: "rust-anything-v5.0.2-aarch64-apple-darwin.tar.gz" },
     shots: ["shots/rustanything/win-1.png"]
   },
   {
@@ -60,8 +60,8 @@ const APPS = [
     about: "Открытый агент: читает проект, правит файлы, гоняет команды. Работает из консоли, в отдельном приложении и как расширение к редактору, провайдера моделей выбираешь сам.",
     tags: ["ai", "cli", "open source"],
     url: "https://opencode.ai/",
-    win: { url: rel("anomalyco/opencode", "v2.4.1", "opencode-desktop-win-x64.exe"), file: "opencode-desktop-win-x64.exe" },
-    mac: { url: rel("anomalyco/opencode", "v2.4.1", "opencode-desktop-mac-arm64.dmg"), file: "opencode-desktop-mac-arm64.dmg" },
+    win: { url: rel("anomalyco/opencode", "v2.4.2", "opencode-desktop-win-x64.exe"), file: "opencode-desktop-win-x64.exe" },
+    mac: { url: rel("anomalyco/opencode", "v2.4.2", "opencode-desktop-mac-arm64.dmg"), file: "opencode-desktop-mac-arm64.dmg" },
     shots: ["shots/opencode/win-1.png"]
   },
   {
@@ -190,8 +190,8 @@ const APPS = [
     about: "Нативный клиент Telegram на Rust без браузерного движка: стартует мгновенно, держит 10–30 МБ памяти и не грузит процессор в простое.",
     tags: ["telegram", "rust", "лёгкий"],
     url: `${GH}/Timon2306/oxigram`,
-    win: { url: rel("Timon2306/oxigram", "v0.3.2", "oxigram-windows-x64-oxigram-native_0.3.2_x64-setup.exe"), file: "oxigram-windows-x64-oxigram-native_0.3.2_x64-setup.exe" },
-    mac: { url: rel("Timon2306/oxigram", "v0.3.2", "oxigram-macos-apple-silicon-Oxigram_0.3.2_aarch64.dmg"), file: "oxigram-macos-apple-silicon-Oxigram_0.3.2_aarch64.dmg" },
+    win: { url: rel("Timon2306/oxigram", "v0.3.3", "oxigram-windows-x64-oxigram-native_0.3.3_x64-setup.exe"), file: "oxigram-windows-x64-oxigram-native_0.3.3_x64-setup.exe" },
+    mac: { url: rel("Timon2306/oxigram", "v0.3.3", "oxigram-macos-apple-silicon-Oxigram_0.3.3_aarch64.dmg"), file: "oxigram-macos-apple-silicon-Oxigram_0.3.3_aarch64.dmg" },
     shots: ["shots/oxigram/win-1.webp", "shots/oxigram/win-2.webp", "shots/oxigram/win-3.webp"]
   },
   {
@@ -210,7 +210,7 @@ const APPS = [
     about: "Открытая утилита: убирает встроенные приложения и телеметрию, переключает службы и оформление, ставит и удаляет программы из Store и winget. Пресеты настроек можно сохранить и применить на другой машине.",
     tags: ["debloat", "твики", "open source"],
     url: "https://winhance.net/",
-    win: { url: rel("memstechtips/Winhance", "v26.06.12", "Winhance.Installer.exe"), file: "Winhance.Installer.exe" },
+    win: { url: rel("memstechtips/Winhance", "v26.11.27", "Winhance.Installer.exe"), file: "Winhance.Installer.exe" },
     mac: null, macAlt: { name: "OnyX", url: "https://titanium-software.fr/en/onyx.html" },
     shots: []
   },
@@ -362,7 +362,7 @@ const APPS = [
     about: "Современный клинер на WinUI 3: удаляет временные файлы, кэши браузеров и логи, понимает формат winapp2.ini от сообщества. Без рекламы, допродаж и «оптимизации реестра», которой не существует.",
     tags: ["очистка", "ccleaner", "open source"],
     url: `${GH}/builtbybel/FluentCleaner`,
-    win: { url: rel("builtbybel/FluentCleaner", "26.11.123", "FluentCleaner-win-x64.zip"), file: "FluentCleaner-win-x64.zip" },
+    win: { url: rel("builtbybel/FluentCleaner", "26.11.126", "FluentCleaner-win-x64.zip"), file: "FluentCleaner-win-x64.zip" },
     mac: null, macAlt: { name: "OnyX", url: "https://titanium-software.fr/en/onyx.html" },
     shots: ["shots/fluentcleaner/win-1.png"]
   },
@@ -373,8 +373,8 @@ const APPS = [
     note: "Сборки пока в статусе alpha, версия помечена как prerelease. Версия для macOS собрана сообществом и помечена UNOFFICIAL.",
     tags: ["youtube", "rust", "open source"],
     url: `${GH}/Avaneesh-Inamdar/Stream-Tube-Desktop`,
-    win: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.5-alpha", "StreamTube-0.7.5-alpha-setup.exe"), file: "StreamTube-0.7.5-alpha-setup.exe" },
-    mac: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.5-alpha", "StreamTube-0.7.5-alpha-macos-arm64-UNOFFICIAL.zip"), file: "StreamTube-0.7.5-alpha-macos-arm64-UNOFFICIAL.zip" },
+    win: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v1.0.2", "StreamTube-1.0.2-setup.exe"), file: "StreamTube-1.0.2-setup.exe" },
+    mac: { url: rel("Avaneesh-Inamdar/Stream-Tube-Desktop", "v0.7.7-alpha", "StreamTube-0.7.7-alpha-macos-arm64-UNOFFICIAL.zip"), file: "StreamTube-0.7.7-alpha-macos-arm64-UNOFFICIAL.zip" },
     shots: ["shots/streamtube/win-1.png", "shots/streamtube/win-2.png"]
   },
   {
@@ -394,8 +394,8 @@ const APPS = [
     note: "На телефон нужен APK из того же релиза (PhoneBox-0.9.29.apk), ссылка на странице релизов.",
     tags: ["android", "панель", "open source"],
     url: `${GH}/ersinkoc/phonebox`,
-    win: { url: rel("ersinkoc/phonebox", "v0.9.29", "PhoneBoxAgent-0.9.29-win-x64.zip"), file: "PhoneBoxAgent-0.9.29-win-x64.zip" },
-    mac: { url: rel("ersinkoc/phonebox", "v0.9.29", "PhoneBoxAgent-0.9.29-osx-arm64.zip"), file: "PhoneBoxAgent-0.9.29-osx-arm64.zip" },
+    win: { url: rel("ersinkoc/phonebox", "v0.9.32", "PhoneBoxAgent-0.9.32-win-x64.zip"), file: "PhoneBoxAgent-0.9.32-win-x64.zip" },
+    mac: { url: rel("ersinkoc/phonebox", "v0.9.32", "PhoneBoxAgent-0.9.32-osx-arm64.zip"), file: "PhoneBoxAgent-0.9.32-osx-arm64.zip" },
     shots: ["shots/phonebox/win-1.png", "shots/phonebox/win-2.png", "shots/phonebox/win-3.png", "shots/phonebox/win-4.png"]
   },
   {
@@ -404,7 +404,7 @@ const APPS = [
     about: "Показывает в профиле Discord, что ты слушаешь или во что играешь, даже если сам клиент закрыт. Настраивается списком правил.",
     tags: ["discord", "rich presence", "open source"],
     url: `${GH}/Timon2306/mimic-discord`,
-    win: { url: rel("Timon2306/mimic-discord", "v1.3.4", "mimic_1.3.4_x64-setup.exe"), file: "mimic_1.3.4_x64-setup.exe" },
+    win: { url: rel("Timon2306/mimic-discord", "v1.3.5", "mimic_1.3.5_x64-setup.exe"), file: "mimic_1.3.5_x64-setup.exe" },
     mac: null, macAlt: null,
     shots: []
   },
